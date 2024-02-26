@@ -234,6 +234,18 @@ export const EAS_CHAIN_CONFIGS: EASChainConfig[] = [
     etherscanURL: "https://sepolia.scrollscan.com/",
     rpcProvider: `https://sepolia-rpc.scroll.io/`,
   },
+  {
+    chainId: 43113,
+    chainName: "fuji",
+    subdomain: "fuji",
+    version: "1.3.0",
+    contractAddress: "0x8a89299abD38cCfe48fB58f2DDB7640Dab4024F0",
+    schemaRegistryAddress: "0x1dD696EEF1a196b2B16f942A80A9dA7289Eb17E2",
+    contractStartBlock: 30217395,
+    etherscanURL: "https://testnet.snowtrace.io",
+    rpcProvider: `https://api.avax-test.network/ext/bc/C/rpc`,
+  },
+
 ];
 
 const activeChainConfig = EAS_CHAIN_CONFIGS.find(
