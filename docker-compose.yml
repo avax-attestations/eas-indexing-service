@@ -19,6 +19,7 @@ services:
     environment:
       CHAIN_ID: ${CHAIN_ID}
       DATABASE_URL: "postgresql://postgres:postgresPassword@eas-postgres:5432/eas-index"
+      BATCH_SIZE: ${BATCH_SIZE}
     depends_on:
       - eas-postgres
     ports:
