@@ -243,7 +243,10 @@ export const EAS_CHAIN_CONFIGS: EASChainConfig[] = [
     schemaRegistryAddress: "0x1dD696EEF1a196b2B16f942A80A9dA7289Eb17E2",
     contractStartBlock: 30217395,
     etherscanURL: "https://testnet.snowtrace.io",
-    rpcProvider: `https://api.avax-test.network/ext/bc/C/rpc`,
+    rpcProvider: process.env.RPC_PROVIDER
+      ? process.env.RPC_PROVIDER
+      : `https://api.avax-test.network/ext/bc/C/rpc`
+
   },
 
 ];
